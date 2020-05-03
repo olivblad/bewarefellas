@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactPlayer from "react-player";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="landpage">
+      <h1>Beware Fellas...</h1>
+      <h1>Dance Music is Back</h1>
+      <ReactPlayer
+        url="https://soundcloud.com/90s-dance-music/definition-of-joy-stay-with-me-4-ever"
+        config={{
+          soundcloud: {
+            options: { auto_play: true },
+          },
+        }}
+      />
+      <h2>Go Tell Your Mom...</h2>
     </div>
   );
 }
